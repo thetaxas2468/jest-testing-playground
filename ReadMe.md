@@ -1,17 +1,19 @@
-# Jest Mocking & Unit Testing Playground
+What this project contains
 
-This project demonstrates core concepts of unit testing in JavaScript using Jest.  
-It focuses on mocking functions, controlling dependencies, and understanding how Jest handles modules under the hood.
+This project includes a set of JavaScript examples using Jest to demonstrate different unit testing and mocking techniques.
 
-----
+It contains:
 
-## 🚀 What You Will Learn
+Tests for callback-based functions using jest.fn()
+Examples of function mocking and controlling return values
+Partial module mocking using Jest
+Tests that demonstrate how module imports and caching work
+Cases showing how internal function references affect mocking behavior
+Examples of isolating dependencies during unit testing
 
-- How to mock functions using `jest.fn()`
-- How callbacks are tested in Jest
-- How to mock module dependencies
-- Difference between real and mocked implementations
-- Why internal function references matter in testing
-- When to use partial mocks vs full mocks
+The project is organized into test files covering basic, edge-case, and advanced mocking scenarios.
 
-----
+💡 Key focus
+
+The code focuses on practical Jest behavior in real test environments, including how mocked functions interact with module exports and why some mocks do not affect internal function calls.
+gi

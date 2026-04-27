@@ -9,4 +9,17 @@ describe("userUtils - processUser", () => {
     expect(mockFn).toHaveBeenCalledWith("Karam");
     expect(mockFn).toHaveBeenCalledTimes(1);
   });
+
+  test("processUser handles empty callback safely", () => {
+    expect(() => processUser()).toThrow();
+  });
+
+  test("callback is called multiple times correctly", () => {
+    const mockFn = jest.fn();
+
+    processUser(mockFn);
+    processUser(mockFn);
+
+    expect(mockFn).toHaveBeenCalledTimes(2);
+  });
 });
