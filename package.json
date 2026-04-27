@@ -1,3 +1,23 @@
 {
-  "description": ""
+  "name": "Minimal-Jest-Mocking-Spy-and-Unit-Testing-Playground",
+  "version": "1.0.0",
+  "description": "A JavaScript Jest testing playground demonstrating function mocking, partial module mocking, callback testing, and dependency control to understand real-world Jest behavior and pitfalls.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "testing",
+    "unit-testing",
+    "mocking",
+    "javascript",
+    "spies",
+    "tdd"
+  ],
+  "author": "Karam",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }
