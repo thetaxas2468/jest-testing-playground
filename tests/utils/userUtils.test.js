@@ -1,4 +1,4 @@
-const { processUser } = require("../../src/utils/userUtils");
+const { processUser, getUser } = require("../../src/utils/userUtils");
 
 describe("userUtils - processUser", () => {
   test("calls callback with correct value", () => {
@@ -21,5 +21,9 @@ describe("userUtils - processUser", () => {
     processUser(mockFn);
 
     expect(mockFn).toHaveBeenCalledTimes(2);
+  });
+
+  test("user snapshot", () => {
+    expect(getUser()).toMatchSnapshot();
   });
 });

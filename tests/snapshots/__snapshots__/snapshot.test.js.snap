@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`will check the matchers and pass 1`] = `
+{
+  "createdAt": Any<Date>,
+  "id": Any<Number>,
+  "name": "LeBron James",
+}
+`;
+
+exports[`will fail every time 1`] = `
+{
+  "createdAt": 2026-04-27T10:23:49.932Z,
+  "id": 11,
+  "name": "LeBron James",
+}
+`;

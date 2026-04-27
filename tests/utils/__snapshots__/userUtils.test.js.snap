@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`userUtils - processUser user snapshot 1`] = `
+{
+  "age": 27,
+  "name": "Karam",
+}
+`;
