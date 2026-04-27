@@ -19,5 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
   }
 }
