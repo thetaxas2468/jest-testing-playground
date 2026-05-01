@@ -1,46 +1,39 @@
-📌 Project Overview
+# Minimal Jest Mocking, Spy & Unit Testing Playground
 
-This project demonstrates practical unit testing techniques using Jest in real-world scenarios.
+A JavaScript learning project demonstrating practical Jest techniques — mocks, spies, fake APIs, fake timers, and blackbox integration testing — organized into progressively complex examples.
 
-It focuses on how testing behaves in real environments, not just basic examples, with emphasis on mocking, spying, and dependency isolation.
+## What this project covers
 
-🧪 What This Project Includes
-Unit tests for callback-based functions using jest.fn()
-Function mocking and controlling return values
-Partial module mocking using Jest
-Demonstrations of how module imports and caching affect tests
-Cases showing how internal function references impact mocking behavior
-Techniques for isolating dependencies during unit testing
-🧠 Real-World Scenarios
+- `jest.fn()` — creating standalone mock functions and controlling return values
+- `jest.spyOn()` — wrapping real functions to observe calls without replacing them
+- `jest.mock()` — replacing entire modules with auto-mocked versions
+- `mockResolvedValue` / `mockRejectedValue` — faking async API success and failure
+- `jest.useFakeTimers()` — controlling `setTimeout` without real waiting
+- `expect.objectContaining()` — partial object matching on API call assertions
+- Blackbox integration testing — treating a feature as a black box via mocked APIs
 
-To make the project more practical and relevant, it includes testing examples inspired by real systems:
+## Project structure
 
-🏦 ATM system scenarios
-Balance checks
-Withdraw logic
-Error handling (insufficient funds, invalid input)
-🚚 Delivery app scenarios
-Order creation logic
-Payment handling (mocked)
-Callback-based flows
-Edge cases like failures and retries
-🎯 Key Focus
+```
+src/
+  atm/              — ATM machine (auth, bank API, session, logger)
+  deliveryApp/      — Delivery app (cart, orders, payments, promos)
+  services/         — Misc service examples
+  utils/            — Pure utility functions
 
-This project focuses on understanding how Jest actually behaves in real testing environments, including:
+tests/
+  atm/              — 5 files: basic → spyOn → module mocks → fake API → fake timers
+  deliveryApp/      — 6 files: cart → ordering → payment → negative → edge cases → API contract
+  services/         — Service-level unit tests
+```
 
-How mocked functions interact with module exports
-Why some mocks do not affect internal function calls
-How dependency structure impacts testability
-Practical patterns for writing reliable unit tests
+## Running tests
 
-💡 Why This Project
+```bash
+npm test                  # all tests
+npm run test:coverage     # all tests + coverage report
+npm run test:atm          # ATM tests only
+npm run test:delivery     # delivery app tests only
+```
 
-This project is designed to strengthen understanding of:
-
-Unit testing fundamentals
-Mocking and spying techniques
-Writing testable code
-Handling real-world edge cases
-🚀 Summary
-
-Rather than focusing only on simple examples, this project explores realistic testing challenges and demonstrates how to handle them using Jest.
+Open `coverage/index.html` in a browser for the full interactive coverage report.
