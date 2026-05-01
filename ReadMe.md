@@ -1,19 +1,46 @@
-What this project contains
+📌 Project Overview
 
-This project includes a set of JavaScript examples using Jest to demonstrate different unit testing and mocking techniques.
+This project demonstrates practical unit testing techniques using Jest in real-world scenarios.
 
-It contains:
+It focuses on how testing behaves in real environments, not just basic examples, with emphasis on mocking, spying, and dependency isolation.
 
-Tests for callback-based functions using jest.fn()
-Examples of function mocking and controlling return values
+🧪 What This Project Includes
+Unit tests for callback-based functions using jest.fn()
+Function mocking and controlling return values
 Partial module mocking using Jest
-Tests that demonstrate how module imports and caching work
-Cases showing how internal function references affect mocking behavior
-Examples of isolating dependencies during unit testing
+Demonstrations of how module imports and caching affect tests
+Cases showing how internal function references impact mocking behavior
+Techniques for isolating dependencies during unit testing
+🧠 Real-World Scenarios
 
-The project is organized into test files covering basic, edge-case, and advanced mocking scenarios.
+To make the project more practical and relevant, it includes testing examples inspired by real systems:
 
-💡 Key focus
+🏦 ATM system scenarios
+Balance checks
+Withdraw logic
+Error handling (insufficient funds, invalid input)
+🚚 Delivery app scenarios
+Order creation logic
+Payment handling (mocked)
+Callback-based flows
+Edge cases like failures and retries
+🎯 Key Focus
 
-The code focuses on practical Jest behavior in real test environments, including how mocked functions interact with module exports and why some mocks do not affect internal function calls.
-gi
+This project focuses on understanding how Jest actually behaves in real testing environments, including:
+
+How mocked functions interact with module exports
+Why some mocks do not affect internal function calls
+How dependency structure impacts testability
+Practical patterns for writing reliable unit tests
+
+💡 Why This Project
+
+This project is designed to strengthen understanding of:
+
+Unit testing fundamentals
+Mocking and spying techniques
+Writing testable code
+Handling real-world edge cases
+🚀 Summary
+
+Rather than focusing only on simple examples, this project explores realistic testing challenges and demonstrates how to handle them using Jest.
